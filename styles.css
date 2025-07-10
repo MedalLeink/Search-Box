@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: rgb(255, 167, 3);
+    background-color: rgb(119, 77, 0);
     height: 100vh;
     width: 100%;
     display: flex;
@@ -52,19 +52,22 @@ body {
     top: 0;
     width: 50px;
     right: -2px;
-    background: rgb(255, 167, 3);
+    background: #fff;
     height: 100%;
     text-align: center;
     line-height: 50px;
-    color: #fff;
-    border-radius: 0 25px 25px 0;
+    color: rgb(119, 77, 0);
+    border-radius: 25px;
     font-size: 24px;
 }
 
-/* .start i {
-    padding: 16px;
-    background-color: #fff;
-    border-radius: 50px;
-    font-size: 32px;
-    box-shadow: 0 5px 10px rgb(100, 65, 0, 0.5);
-} */
+#check:checked ~ .search-box .icon {
+    background: rgb(119, 77, 0);
+    color: #fff;
+    width: 60px;
+    border-radius: 0 25px 25px 0;
+}
+
+#check {
+    display: none;
+}
